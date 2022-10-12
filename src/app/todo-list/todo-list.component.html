@@ -1,0 +1,28 @@
+<!-- Start Navbar -->
+
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <a class="navbar-brand bg-info p-2">TodoList</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page"  routerLink="/allTodo"  routerLinkActive="active">all TodoList </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/create"  routerLinkActive="active">Create Todo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- End Navbar -->
+
+<hr> 
+<hr>
+
+<!-- Star All Todo List  -->
+<!-- <app-all-todo-list></app-all-todo-list> -->
+<router-outlet></router-outlet>

@@ -1,0 +1,43 @@
+
+<div class="container">
+
+
+    <div class="table-responsive">
+        <table class="table table-striped
+        table-hover	
+        table-borderless
+        table-primary
+        align-middle">
+            <thead class="table-light">
+                <h2 class="w-100">All Todo List</h2>
+                <tr>
+                    <!-- <th>Number</th> -->
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>CreatedDate</th>
+                    <th>Options</th>
+                </tr>
+                </thead>
+                <tbody class="table-group-divider">
+                    <tr class="table-primary" *ngFor="let one of showAllTodo; let i = index">
+                        <!-- <td scope="row">{{i+1}}</td> -->
+                        <td scope="row">{{one.ID}}</td>
+                        <td>{{one.Title}}</td>
+                        <td>{{one.CreatedDate}}</td>
+                        <td>
+                            <button class="btn btn-danger d-block m-1" (click)="remove(i)">Remove</button>
+                            <!-- <button class="btn btn-danger" (click)="goToDetails()">Details Todo</button> -->
+                            <button class="btn btn-success" routerLink="ditails/{{one.ID}}">Details Todo</button>
+
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    
+                </tfoot>
+        </table>
+    </div>
+    
+    
+
+</div>
